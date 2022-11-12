@@ -1,5 +1,6 @@
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
+const $body = document.querySelector('body');
 const $btn = document.querySelector("#btn");
 
 $btn.addEventListener('click', e => {
@@ -15,7 +16,8 @@ $btn.addEventListener('click', e => {
         hex[Math.floor(Math.random() * hex.length)].toString() +
         hex[Math.floor(Math.random() * hex.length)].toString();
 
-    const hexCode = red + green + blue;
+    const hexCode = '#' + red + green + blue;
     console.log(hexCode);
+    $body.style.background = hexCode;
 })
 
