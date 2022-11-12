@@ -7,8 +7,8 @@ const $btn = $cont.querySelector("#btn");
 
 $btn.addEventListener('click', e => {
     const red = 
-    hex[Math.floor(Math.random() * hex.length)].toString() +
-    hex[Math.floor(Math.random() * hex.length)].toString();
+        hex[Math.floor(Math.random() * hex.length)].toString() +
+        hex[Math.floor(Math.random() * hex.length)].toString();
 
     const green = 
         hex[Math.floor(Math.random() * hex.length)].toString() +
@@ -19,8 +19,7 @@ $btn.addEventListener('click', e => {
         hex[Math.floor(Math.random() * hex.length)].toString();
 
     const hexCode = '#' + red + green + blue;
-    console.log(hexCode);
     $colorSpan.textContent = hexCode;
     $body.style.background = hexCode;
-})
+});
 
