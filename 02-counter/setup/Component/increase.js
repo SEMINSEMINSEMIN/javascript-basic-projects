@@ -7,7 +7,7 @@ function increase(target){
     } else {
         target.style.color = "black";
     }
-    target.textContent = increasedNum.toString();
+    target.textContent = increasedNum;
 }
 
 export default increase

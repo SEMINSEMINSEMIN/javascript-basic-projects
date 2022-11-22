@@ -7,7 +7,7 @@ function decrease(target){
     } else {
         target.style.color = "black";
     }
-    target.textContent = decreasedNum.toString();
+    target.textContent = decreasedNum;
 }
 
 export default decrease
