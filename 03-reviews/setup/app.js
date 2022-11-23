@@ -1,4 +1,5 @@
-import {prevOrNext, random} from "./Component/btns.js";
+import prevOrNext from "./Component/prevOrNext.js";
+import random from "./Component/random.js";
 
 // local reviews data
 const reviews = [
@@ -48,6 +49,7 @@ const name = article.querySelector("#author");
 const job = article.querySelector("#job");
 const text = article.querySelector("#info");
 const domElements = {img, name, job, text};
+export let id = [1];
 
 const randomBtn = article.querySelector(".random-btn");
 
