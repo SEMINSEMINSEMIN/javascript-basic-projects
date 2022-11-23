@@ -1,4 +1,4 @@
-import prevOrNext from "./Component/prev_next_btns.js";
+import {prevOrNext, random} from "./Component/btns.js";
 
 // local reviews data
 const reviews = [
@@ -49,6 +49,12 @@ const job = article.querySelector("#job");
 const text = article.querySelector("#info");
 const domElements = {img, name, job, text};
 
+const randomBtn = article.querySelector(".random-btn");
+
 btns.forEach(btn => {
     btn.addEventListener("click", e => prevOrNext(e, reviews, domElements));
-})
+});
+
+randomBtn.addEventListener("click", e => {
+  random(reviews, domElements);
+});

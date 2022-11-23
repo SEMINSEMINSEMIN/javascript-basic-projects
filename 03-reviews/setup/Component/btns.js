@@ -12,6 +12,7 @@ function prevOrNext(e, data, obj){
     } else if (id === 0){
         id = data.length;
     }
+
     const targetData = data.filter(e => e["id"] === id)[0];
 
     obj["img"].setAttribute("src", targetData["img"]);
@@ -20,4 +21,13 @@ function prevOrNext(e, data, obj){
     obj["text"].textContent = targetData["text"];
 }
 
-export default prevOrNext;
+function random(data, obj){
+    id = Math.floor(Math.random() * data.length + 1);
+    const targetData = data.filter(e => e["id"] === id)[0];
+    obj["img"].setAttribute("src", targetData["img"]);
+    obj["name"].textContent = targetData["name"];
+    obj["job"].textContent = targetData["job"];
+    obj["text"].textContent = targetData["text"];
+}
+
+export {prevOrNext, random};
