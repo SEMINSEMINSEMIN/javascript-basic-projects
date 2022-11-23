@@ -1,5 +1,6 @@
 import prevOrNext from "./Component/prevOrNext.js";
 import random from "./Component/random.js";
+import showPerson from "./Component/showPerson.js";
 
 // local reviews data
 const reviews = [
@@ -54,9 +55,9 @@ export let id = [1];
 const randomBtn = article.querySelector(".random-btn");
 
 btns.forEach(btn => {
-    btn.addEventListener("click", e => prevOrNext(e, reviews, domElements));
+    btn.addEventListener("click", e => prevOrNext(e, reviews, domElements, showPerson));
 });
 
 randomBtn.addEventListener("click", e => {
-  random(reviews, domElements);
+  random(reviews, domElements, showPerson);
 });
