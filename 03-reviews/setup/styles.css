@@ -105,6 +105,15 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
+.ir {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
