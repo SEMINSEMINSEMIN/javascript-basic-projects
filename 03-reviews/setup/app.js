@@ -1,3 +1,5 @@
+import prevOrNext from "./Component/prev_next_btns.js";
+
 // local reviews data
 const reviews = [
   {
@@ -37,3 +39,16 @@ const reviews = [
       "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
   },
 ];
+
+const btnCont = document.querySelector(".button-container");
+const btns = btnCont.querySelectorAll("button");
+const article = document.querySelector(".review");
+const img = article.querySelector("#person-img");
+const name = article.querySelector("#author");
+const job = article.querySelector("#job");
+const text = article.querySelector("#info");
+const domElements = {img, name, job, text};
+
+btns.forEach(btn => {
+    btn.addEventListener("click", e => prevOrNext(e, reviews, domElements));
+})
