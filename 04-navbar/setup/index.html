@@ -15,10 +15,15 @@
 <body>
   <div class="header-area">
     <header class="nav-center">
-      <h1 class="nav-header">
-        <img class="logo" src="logo.svg" alt="Coding Addict">
-      </h1>
-      <nav aria-label="Page Links">
+      <div class="nav-header">
+        <h1 class="nav-logo">
+          <img class="logo" src="logo.svg" alt="Coding Addict">
+        </h1>
+        <button class="nav-toggle" type="button" aria-label="Toggle Button for menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <nav class="links-cont" aria-label="Page Links">
         <ul class="links">
           <li>
             <a href="index.html">Home</a>
@@ -71,9 +76,6 @@
           </li>
         </ul>
       </nav>
-      <button class="nav-toggle" type="button" aria-label="Toggle Button for menu">
-        <i class="fas fa-bars"></i>
-      </button>
     </header>
   </div>
 

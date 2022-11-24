@@ -162,17 +162,16 @@ Navbar
     background: var(--clr-white);
     box-shadow: var(--light-shadow);
 }
-.nav-center {
+.nav-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
 }
-.nav-header {
+.nav-logo {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    /* padding: 1rem; */
 }
 .nav-toggle {
     font-size: 1.5rem;
@@ -189,7 +188,7 @@ Navbar
 .logo {
     height: 40px;
 }
-.links a {
+.links-cont a {
     color: var(--clr-grey-3);
     font-size: 1rem;
     text-transform: capitalize;
@@ -198,7 +197,7 @@ Navbar
     padding: 0.5rem 1rem;
     transition: var(--transition);
 }
-.links a:hover {
+.links-cont a:hover {
     background: var(--clr-primary-8);
     color: var(--clr-primary-5);
     padding-left: 1.5rem;
@@ -228,10 +227,10 @@ Navbar
     .nav-center {
         max-width: 1170px;
         margin: 0 auto;
-        /* display: flex; */
-        /* align-items: center; */
-        /* justify-content: space-between; */
-        /* padding: 1rem; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
     }
     .nav-header {
         padding: 0;
@@ -243,11 +242,11 @@ Navbar
         height: auto;
         display: flex;
     }
-    .links a {
+    .links-cont a {
         padding: 0;
         margin: 0 0.5rem;
     }
-    .links a:hover {
+    .links-cont a:hover {
         padding: 0;
         background: transparent;
     }
