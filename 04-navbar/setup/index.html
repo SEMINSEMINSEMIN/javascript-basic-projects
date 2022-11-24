@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
 
-    <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>navbar project</h1>
-    <!-- javascript -->
-    <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header-area">
+    <header class="nav-center">
+      <h1 class="nav-header">
+        <img class="logo" src="logo.svg" alt="Coding Addict">
+      </h1>
+      <nav aria-label="Page Links">
+        <ul class="links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <i> 태그는 기울임 글꼴을 나타냅니다. 
+        HTML5에서는 전문 용어, 문단에서 주 언어와 다른 언어로 표현된 부분(주 언어가 한글이지만 영어로 표기되었을 경우), 
+        소설이라면 등장인물의 생각이 표기되어 있는 부분 등 어떤 이유로 주위와 구분해야 하는 부분을 표현하기 위해 사용합니다.  -->
+      <nav aria-label="SNS Links" class="not-mobile">
+        <ul class="social-icons">
+          <li>
+            <a href="https://twitter.com/">
+              <span class="ir">facebook link</span>
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/">
+              <span class="ir">twitter link</span>
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/">
+              <span class="ir">behance link</span>
+              <i class="fab fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/">
+              <span class="ir">linked in link</span>
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/">
+              <span class="ir">sketch link</span>
+              <i class="fab fa-sketch"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Toggle Button for menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+  </div>
+
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
 </html>
