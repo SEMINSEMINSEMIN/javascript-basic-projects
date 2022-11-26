@@ -222,8 +222,6 @@ Navbar
 }
 .show-links {
   height: 10rem;
-  transition: var(--transition);
-  overflow: hidden;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
